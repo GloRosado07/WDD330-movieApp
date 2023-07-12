@@ -1,0 +1,21 @@
+{
+    "results": [
+        {
+          "popularity": 123.456,
+          "vote_count": 1000,
+          "video": false,
+          "poster_path": "/example_poster.jpg",
+          "id": 123456,
+          "adult": false,
+          "backdrop_path": "/example_backdrop.jpg",
+          "original_language": "en",
+          "original_title": "Example Movie",
+          "genre_ids": [12, 28, 35],
+          "title": "Example Movie",
+          "vote_average": 7.8,
+          "overview": "This is an example movie.",
+          "release_date": "2022-01-01"
+        }
+      ]
+}
+  

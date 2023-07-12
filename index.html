@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="css/movie.css">
+    <link rel="stylesheet" href="css/large.css">
+
+
+    <style>
+        /* Add the CSS styles mentioned in the previous response here */
+    </style>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Movie Selection</h1></a>
+        <form id="form">
+          <input type="text" id="search" placeholder="Search" class="search" />
+          <button id="add-movie-btn">Add Favorite</button> <!-- New button element -->
+        </form>
+        <div id="search-results"></div>
+    </header>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <div class="poster-container">
+            <img class="poster" src="images/monumento.jpg" alt="Movie Poster" />
+            <p class="poster-text">My Favorites</p>
+          </div>
+        </div>
+        <div class="card-back">
+          <h2 class="title">My Selection!</h2>
+         
+          <div id="favorite-movies"></div>
+        </div>
+      </div>
+    </div>
+    <main id="main"></main>
+</body>
+</html>
