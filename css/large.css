@@ -18,10 +18,13 @@ header{
     width: 100%;
     height: 50px;
     background: #fb8b24;
-    display: flex;
+    display: flex-start;
     align-items: center;
     justify-content: center;
     border-bottom: 2px solid #f5bb00;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 header h1{
@@ -41,7 +44,7 @@ header form{
 }
 
 #search{
-    width: 320px;
+    width: 300px;
     height: 40px;
     border: 1px solid black;
     outline: none;
@@ -52,7 +55,7 @@ header form{
 
 #add-movie-btn{
     display: inline-block;
-    padding: 5px 15px;
+    padding: 5px 10px;
     font-size: 20px;
     cursor: pointer;
     text-align: center;
@@ -63,17 +66,25 @@ header form{
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-    margin-right: 15px;
+ 
   }
 
-  div.suggestion, table, th, td  {
+  div.suggestion {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
     display: flex;
-    justify-content: space-evenly;
-    
-    margin-bottom: 1px;
+    justify-content: space-evenly;    
     background-color: #012a4a;
     cursor: pointer;
-    color: #ebebeb;   
+    color: #ebebeb;
+    margin-left: 15px; 
   }
+
+  .card.flipped .card-front {
+    transform: rotateY(180deg);
+  }
+  
+  .card.flipped .card-back {
+    transform: rotateY(0);
+  }
+  

@@ -96,6 +96,7 @@ h2{
     font-weight: bold;
     text-align: center;
     color: #fff;
+    margin-bottom: 0.5px 5px;
 }
 
 .card {
@@ -130,13 +131,14 @@ h2{
   
   .card-back {
     background-color: #fb8b24;
-    color: darkblue;
+    color: #012a4a;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   .poster {
@@ -209,15 +211,15 @@ h2{
   }
   
   .remove-button {
-    background-color: rgb(9, 232, 239);
-    color: rgb(18, 36, 22);
+    background-color: #012a4a;
+    color: #e5e3e3;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
-    margin: 10px;
+    margin: 5px;
   }
   
-div.suggestion, table, th, td  {
+div.suggestion  {
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-size: 15px;
   display: flex;

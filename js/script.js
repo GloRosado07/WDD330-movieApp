@@ -154,7 +154,7 @@ function debounce(func, delay) {
       });   
       
       
-      // Define an array to store the favorite movies
+// Define an array to store the favorite movies
 let favoriteMovies = [];
 
 // Function to handle the "Add Movie" button click event
@@ -287,11 +287,17 @@ function displayFavoriteMovies() {
   });
 }
 
-// ...existing code...
 
-// Call the retrieveFavorites function to load favorites from Local Storage on page load
-retrieveFavorites();
+// Function to toggle the flip animation class
+function toggleFlip() {
+  this.classList.toggle('flipped');
+}
 
-// Display the favorite movies on page load
-displayFavoriteMovies();
+// Adding event listener for the card click event
+main.addEventListener('click', function (event) {
+  const card = event.target.closest('.card');
+  if (card) {
+    card.classList.toggle('flipped');
+  }
+});
 
